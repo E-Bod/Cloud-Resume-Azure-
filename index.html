@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title> Ethan Boddy's Resume </title>
-    <link rel="stylesheet" href="style.css"> <!--links the style.css file to the doc for styling (make sure you name the .css file correctly) -->
+    <link rel="stylesheet" href="styles.css"> <!--links the style.css file to the doc for styling (make sure you name the .css file correctly) -->
+
+     <!--Firebase SDKs-->
+     <script type="module" src = "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js" ></script>
+     <script type="module" src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js" ></script> <!-- Include Firestore -->
+     <script type="module" src = "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js" ></script>
+     <script type="module" src="script.js" ></script>
 </head>
 
 <body> 
-    <h1>Welcome to My Resume Page</h1>
-    <p>Visitor Count: <span id="visitor-count"> Loading...</span></p>
-    
-
+   
     <header>
+        <h1>Welcome to My Resume Page</h1> <!-- main heading (level 1) -->
         <h1> Ethan Boddy </h1> <!-- main heading (level 1) -->
+        <p>Visitor Count: <span id="visitor-count"> Loading...</span></p>
         <p> Computer Engineer </p>
         <p> <a href="mailto:ethanboddy@gmail.com"> ethanboddy@gmail.com</a></p> 
         <p> <a href="https://www.linkedin.com/in/ethan-boddy/"> My LinkedIn </a> | <a href="https://github.com/E-Bod"> My Github</a></p> 
@@ -67,25 +72,10 @@
         </ul>
     </section>
 
-    <!--Firebase SDKs-->
-    <script src = "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js"></script> <!-- Include Firestore -->
-    <script src = "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js"></script>
-
-    <script>
-         const firebaseConfig = {
-            apiKey: "AIzaSyAGbgqZal2bVzgsc92w1Tl2Vb9EwyPQ-_w",
-            authDomain: "cloudresumechallenge-azure.firebaseapp.com",
-            projectId: "cloudresumechallenge-azure",
-            storageBucket: "cloudresumechallenge-azure.appspot.com",
-            messagingSenderId: "443415383250",
-            appId: "1:443415383250:web:0c92d539babb35d2dcf10b"
-        };
-        firebase.initializeApp(firebaseConfig);
-    </script>
+   
 
 
-<script src="script.js"></script> <!-- links the script.js file to the doc for functionality (make sure you name the .js file correctly) -->
+
 </body>
 </html>
 
